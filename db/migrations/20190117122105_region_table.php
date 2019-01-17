@@ -12,11 +12,8 @@ class RegionTable extends AbstractMigration
             ->addColumn('id', 'biginteger', ['identity' => true])
             ->addColumn('parent_id', 'biginteger')
             ->addColumn('name', 'char', ['limit' => 20])
+            ->addIndex('parent_id')
             ->create();
-
-        $table
-            ->addForeignKey('parent_id', 'region')
-            ->save();
     }
 
     public function down()
