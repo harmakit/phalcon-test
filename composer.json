@@ -1,0 +1,12 @@
+{
+    "name": "harmakit/phalcon-test",
+    "authors": [
+        {
+            "name": "harmakit",
+            "email": "harmakit@gmail.com"
+        }
+    ],
+    "require": {
+        "robmorgan/phinx": "^0.10.6"
+    }
+}
