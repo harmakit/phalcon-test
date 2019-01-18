@@ -8,6 +8,7 @@
     ],
     "require": {
         "robmorgan/phinx": "^0.10.6",
-        "fzaninotto/faker": "^1.8"
+        "fzaninotto/faker": "^1.8",
+        "ext-json": "*"
     }
 }
