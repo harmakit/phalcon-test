@@ -7,6 +7,14 @@
 $router = $di->getRouter();
 
 $router->add(
+    '/{id:[0-9]+}?',
+    [
+        'controller' => 'index',
+        'action' => 'index'
+    ]
+);
+
+$router->add(
     '/people/{id:[0-9]+}',
     [
         'controller' => 'people',
@@ -15,7 +23,7 @@ $router->add(
 );
 
 $router->add(
-    '/people/region/{id:[0-9]+}',
+    '/people/region/{id:[0-9]+}[/]?{page:[0-9]+}?[/]?{limit:[0-9]+}?',
     [
         'controller' => 'people',
         'action' => 'getByRegionId'
@@ -23,7 +31,7 @@ $router->add(
 );
 
 $router->add(
-    '/region/children/{id:[0-9]+}',
+    '/region/children/{id:[0-9]+}[/]?{page:[0-9]+}?[/]?{limit:[0-9]+}?',
     [
         'controller' => 'region',
         'action' => 'getChildrenRegionId'
