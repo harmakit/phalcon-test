@@ -15,6 +15,14 @@ $router->add(
 );
 
 $router->add(
+    '/table/{id:[0-9]+}?',
+    [
+        'controller' => 'index',
+        'action' => 'table'
+    ]
+);
+
+$router->add(
     '/people/{id:[0-9]+}',
     [
         'controller' => 'people',
