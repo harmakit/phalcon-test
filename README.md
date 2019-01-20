@@ -3,7 +3,7 @@
 ## Build via Docker Compose ##
 
         cd docker
-        docker-sompose up --build
+        docker-compose up --build
         
 ## Vendors, migrations and seeding ##
         
