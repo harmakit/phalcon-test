@@ -1,4 +1,6 @@
 /vendor/
+/app/vendor/
 .idea
 .phalcon
 composer.lock
+/mysql/

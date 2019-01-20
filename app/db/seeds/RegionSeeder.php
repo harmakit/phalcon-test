@@ -1,5 +1,5 @@
 <?php
-
+ini_set('memory_limit', '2G');
 
 use Phinx\Seed\AbstractSeed;
 
@@ -42,7 +42,6 @@ class RegionSeeder extends AbstractSeed
                 'name' => generateRandomString(random_int(3, 20))
             ];
         }
-
 
         $this->table('region')->insert($data)->save();
     }

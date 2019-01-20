@@ -7,11 +7,9 @@ environments:
     default_database: development
     development:
         adapter: mysql
-        host: localhost
+        host: mysql
         name: phalcon-test
-        user: root
-        pass: 'root'
+        user: ptuser
+        pass: 'ptpassword'
         port: 3306
         charset: utf8
-
-version_order: creation
